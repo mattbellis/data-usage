@@ -177,7 +177,7 @@ def main():
     ax.set_title(
         f'Papers citing CMS Open Data DOIs [Inspire]\n'
         f'Excluding CMS/CERN open data teams and CMS Collaboration\n{date_generated}',
-        fontsize=14,
+        fontsize=10,
     )
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)

@@ -257,6 +257,21 @@
         "url": "https://arxiv.org/abs/2206.14221v3"
     },
     {
+        "abstract": "Event triggering sits at the heart of high-energy physics, where the rare events of interest must be retained while an overwhelming background is discarded under tight latency and bandwidth budgets. This work compares four classical machine learning models, namely a support vector machine, an artificial neural network, a convolutional network and a long short-term memory network, with four hybrid quantum counterparts, on a trigger-like binary classification task built from CMS open data. The label is defined by an invariant-mass window, and the inputs combine reconstructed kinematics with physics-motivated derived variables: the pseudorapidity difference, the wrapped azimuthal difference, the angular separation and the total transverse momentum. The quantum models run under a fixed resource budget of eight qubits, a principal-component compression to sixteen features and state-vector simulation. Every model shares the same stratified split, the same preprocessing and a common decision threshold, and performance is reported through accuracy, ROC-AUC, F1-score, precision and recall. The strongest classical model is the artificial neural network, at 93.53 percent accuracy and 0.9819 ROC-AUC, while the strongest quantum model is the quantum convolutional network, at 90.89 percent accuracy and 0.9731 ROC-AUC, with the quantum neural network close behind. The quantum-kernel and recurrent quantum approaches trail both, which places the trainable hybrid embeddings ahead within this budget. The study is meant as a controlled reference point rather than a claim of quantum advantage.",
+        "authors": [
+            "Tariq Mahmood",
+            "Muhammad Awais Rafique",
+            "Talab Hussain",
+            "Juan Pablo Perez Aguilar",
+            "Alfredo Raya",
+            "Muhammad Ahsan"
+        ],
+        "date": "2026-08-26",
+        "doi": "https://arxiv.org/abs/2608.26224v1",
+        "title": "Classical and Hybrid Quantum Machine Learning for Trigger-Like Event Selection on CMS Open Data: An Eight-Qubit, PCA-Constrained Benchmark",
+        "url": "https://arxiv.org/abs/2608.26224v1"
+    },
+    {
         "abstract": "We study quark and gluon jets separately using public collider data from the CMS experiment. Our analysis is based on 2.3/fb of proton-proton collisions at 7 TeV, collected at the Large Hadron Collider in 2011. We define two non-overlapping samples via a pseudorapidity cut -- central jets with |eta| < 0.65 and forward jets with |eta| > 0.65 -- and employ jet topic modeling to extract individual distributions for the maximally separable categories. Under certain assumptions, such as sample independence and mutual irreducibility, these categories correspond to \"quark\" and \"gluon\" jets, as given by a recently proposed operational definition. We consider a number of different methods for extracting reducibility factors from the central and forward datasets, from which the fractions of quark jets in each sample can be determined. The greatest stability and robustness to statistical uncertainties is achieved by a novel method based on parametrizing the endpoints of a receiver operating characteristic (ROC) curve. To mitigate detector effects, which would otherwise induce unphysical differences between central and forward jets, we use the OmniFold method to perform central value unfolding. As a demonstration of the power of this method, we extract the intrinsic dimensionality of the quark and gluon jet samples, which exhibit Casimir scaling, as expected from the strongly-ordered limit. To our knowledge, this work is the first application of full phase space unfolding to real collider data, and one of the first applications of topic modeling to extract separate quark and gluon distributions at the LHC.",
         "authors": [
             "Patrick T. Komiske",
@@ -306,6 +321,17 @@
         "doi": "https://arxiv.org/abs/2201.07800v3",
         "title": "Analyzing N-point Energy Correlators Inside Jets with CMS Open Data",
         "url": "https://arxiv.org/abs/2201.07800v3"
+    },
+    {
+        "abstract": "We present a projected sensitivity study for hadronic mono-$Z$ dark-matter production using CMS Run~2015D HTMHT open data corresponding to 2.256382381~\\invfb, from which 1{,}439{,}523 events satisfy the hadronic mono-$Z$ selection. Backgrounds are modelled with a conditional flow-matching continuous normalizing flow trained on the selected HTMHT events and evaluated on a held-out validation split reweighted to the full selected population. To mitigate artifacts from missing-object features and avoid in-sample scoring bias we apply sentinel imputation for undefined angular features, persist the train/validation split indices, and enforce a minimum reported background yield of 20 events when selecting the working point. A signal-side offline trigger proxy is applied to the simulated signal before scoring. Under this procedure the baseline analysis yields expected significances of 2.89$\u03c3$, 7.62$\u03c3$, and 7.41$\u03c3$ for three simplified-model benchmarks. An ablation study that removes the detailed extra-jet kinematics reduces the expected significance by 53--71\\%, indicating that extra-jet topology carries substantial discriminating power in the hadronic mono-$Z$ channel. These results are projected sensitivities (no unblinding performed); the limitations and reproducibility of the study are discussed in Sections limitations and reproducibility.",
+        "authors": [
+            "Hitesh Rasineni",
+            "Bhavishya Chebrolu"
+        ],
+        "date": "2026-08-21",
+        "doi": "https://arxiv.org/abs/2609.02923v1",
+        "title": "Hadronic Mono-Z Dark Matter Sensitivity with Flow Matching on CMS Open Data",
+        "url": "https://arxiv.org/abs/2609.02923v1"
     },
     {
         "abstract": "At high energy physics experiments, processing billions of records of structured numerical data from collider events to a few statistical summaries is a common task. The data processing is typically more complex than standard query languages allow, such that custom numerical codes are used. At present, these codes mostly operate on individual event records and are parallelized in multi-step data reduction workflows using batch jobs across CPU farms. Based on a simplified top quark pair analysis with CMS Open Data, we demonstrate that it is possible to carry out significant parts of a collider analysis at a rate of around a million events per second on a single multicore server with optional GPU acceleration. This is achieved by representing HEP event data as memory-mappable sparse arrays of columns, and by expressing common analysis operations as kernels that can be used to process the event data in parallel. We find that only a small number of relatively simple functional kernels are needed for a generic HEP analysis. The approach based on columnar processing of data could speed up and simplify the cycle for delivering physics results at HEP experiments. We release the \\texttt{hepaccelerate} prototype library as a demonstrator of such methods.",
@@ -494,6 +520,19 @@
         "url": "https://arxiv.org/abs/2312.06909v1"
     },
     {
+        "abstract": "High-energy physics analyses often process the same data as physicists refine algorithms and test new ideas. With data increasingly read from remote storage, each iteration is subject to network latency and depends on network bandwidth and shared-storage throughput, which can vary substantially under load. We present uCache (xrd-ucache), a transparent client-side cache implemented as an XRootD client plugin that requires neither server-side deployment nor changes to analysis code. It uses local storage on the analysis machine as a cache layer between the network and memory. The cache stores only the data actually read by an analysis. It can also rebuild cached data into a branch-aligned, recompressed form, eliminating most of the input/output and decompression costs of subsequent passes. We benchmark the cache using the Analysis Grand Challenge top quark pair analysis on public CMS Open Data compressed with zlib and LZMA. Filling the cache adds essentially no overhead compared with a direct read. Subsequent passes are 1.6-8.8 times faster from the byte cache and 2.1-15.7 times faster from the recompressed cache. For a typical analysis, a 1 TB cache suffices for datasets of 10-20 TB. The largest improvements occur when the remote data source is heavily loaded or geographically distant.",
+        "authors": [
+            "Dmytro Kovalskyi",
+            "Jan Eysermans",
+            "Mariarosaria D'Alfonso",
+            "Christoph Paus"
+        ],
+        "date": "2026-08-31",
+        "doi": "https://arxiv.org/abs/2609.00400v1",
+        "title": "Client-side transparent caching for remote ROOT data analysis",
+        "url": "https://arxiv.org/abs/2609.00400v1"
+    },
+    {
         "abstract": "Reliable modeling of conditional densities is important for quantitative scientific fields such as particle physics. In domains outside physics, implicit quantile neural networks (IQN) have been shown to provide accurate models of conditional densities. We present a successful application of IQNs to jet simulation and correction using the tools and simulated data from the Compact Muon Solenoid (CMS) Open Data portal.",
         "authors": [
             "Braden Kronheim",
@@ -517,9 +556,9 @@
             "Md. Jakir Hossen"
         ],
         "date": "2025-06-17",
-        "doi": "https://arxiv.org/abs/2506.14934v1",
+        "doi": "https://arxiv.org/abs/2506.14934v2",
         "title": "Vision Transformers for End-to-End Quark-Gluon Jet Classification from Calorimeter Images",
-        "url": "https://arxiv.org/abs/2506.14934v1"
+        "url": "https://arxiv.org/abs/2506.14934v2"
     },
     {
         "abstract": "We present a time-domain search strategy for resonances with periodically varying masses in high-energy collider data. Conventional resonance searches rely on time-integrated event samples and are therefore insensitive to signals whose properties evolve during data taking. To address this limitation, we develop a two-dimensional unbinned likelihood framework in invariant mass and time, allowing the reconstruction of signals that trace nontrivial trajectories in the $(m,t)$ plane rather than appearing as stationary resonances.\n  As a benchmark scenario, we consider a $Z'$ boson arising from a gauged $U(1)_{B-L}$ extension of the Standard Model and introduce a phenomenological model in which the mediator mass undergoes periodic temporal modulation. The resulting signal manifests as a resonance whose position changes with time, producing distinctive patterns that are inaccessible to conventional analyses based solely on invariant-mass information. The method is implemented using dimuon events from the CMS Open Data corresponding to the Run~G data-taking period at $\\sqrt{s}=13~\\mathrm{TeV}$, with an integrated luminosity of $7.54~\\mathrm{fb}^{-1}$. We derive upper limits on the gauge coupling $g'$ as a function of the $Z'$ mass for several choices of the modulation amplitude. The results demonstrate that incorporating temporal information can enhance sensitivity relative to standard time-integrated searches, particularly in regions with sufficient signal statistics.",
@@ -532,9 +571,9 @@
             "Jan Mickelle V. Maratas"
         ],
         "date": "2026-06-16",
-        "doi": "https://arxiv.org/abs/2606.17569v1",
+        "doi": "https://arxiv.org/abs/2606.17569v2",
         "title": "Search for a Time-Dependent Z' Resonance in the Dimuon Channel",
-        "url": "https://arxiv.org/abs/2606.17569v1"
+        "url": "https://arxiv.org/abs/2606.17569v2"
     },
     {
         "abstract": "The remarkably high energies of the Large Hadron Collider (LHC) have allowed for the first measurements of the shapes and scalings of multi-point correlators of energy flow operators, $\\langle \u03a8| \\mathcal{E}(\\vec n_1) \\mathcal{E}(\\vec n_2) \\cdots \\mathcal{E}(\\vec n_k) |\u03a8\\rangle$, providing new insights into the Lorentzian dynamics of quantum chromodynamics (QCD). In this Letter, we use recent advances in effective field theory to derive a rigorous factorization theorem for the light-ray density matrix, $\u03c1= |\u03a8\\rangle \\langle \u03a8|$, inside high transverse momentum jets at the LHC. Using the light-ray operator product expansion, the scaling behavior of multi-point correlators can be computed from the expectation value of the twist-2 spin-$J$ light-ray operators, $\\mathbb{O}^{[J]}$, in this state, $\\text{Tr}[ \u03c1~\\mathbb{O}^{[J]} ]$. We compute the light-ray density matrix at next-to-leading order, and combine this with results for the next-to-leading logarithmic scaling behavior of the correlators up to six-points, comparing with CMS Open Data. This theoretical accuracy allows us to resolve the quantum scaling dimensions of QCD light-ray operators inside jets at the LHC. Our factorization theorem for the light-ray density matrix at the LHC completes the link between recent developments in the study of energy correlators and LHC phenomenology, opening the door to a wide variety of precision jet substructure studies.",
@@ -547,6 +586,18 @@
         "doi": "https://arxiv.org/abs/2205.03414v1",
         "title": "Conformal Colliders Meet the LHC",
         "url": "https://arxiv.org/abs/2205.03414v1"
+    },
+    {
+        "abstract": "We present an unsupervised search for anomalous dijet events in proton--proton collision data using neural spline flow density estimation. A normalizing flow model is trained on a high-dimensional feature space comprising jet, dijet, and event-level observables to learn the dominant Standard Model background directly from data, without assuming a specific signal hypothesis. Events assigned low likelihood under the learned density are identified as potential anomalous events.\n  Using this approach on a CMS Open Data dijet sample, we investigate extreme events in the tail of the anomaly-score distribution and perform an extensive validation and robustness study. This study includes feature-level statistical comparisons, mass decorrelation tests, permutation-based null tests, and evaluations of training stability. The selected anomalous events exhibit notable departures from the background-only expectation, primarily in jet-substructure observables, while remaining stable under several known sources of bias in unsupervised learning.\n  The identified anomalies are distributed across the kinematic phase space and do not exhibit a narrow structure in the dijet invariant-mass spectrum. Instead, they show correlated deviations across multiple observables, consistent with a multivariate difference in jet substructure and event topology rather than a localized resonance. While no claim of new physics is made, this study demonstrates that neural spline flow-based density estimation can be sensitive to rare, structured deviations in collider data and may provide a model-independent exploratory tool for searches for physics beyond the Standard Model at the LHC.",
+        "authors": [
+            "Bhavishya Chebrolu",
+            "Hitesh Rasineni",
+            "Prajwal Aaryan Immadi"
+        ],
+        "date": "2026-09-06",
+        "doi": "https://arxiv.org/abs/2609.06686v1",
+        "title": "Likelihood-Based Unsupervised Anomaly Detection in CMS Dijet Events",
+        "url": "https://arxiv.org/abs/2609.06686v1"
     },
     {
         "abstract": "A search is performed for pairs of light pseudoscalar bosons (a) produced from decays of the 125 GeV Higgs boson ($\\text{h}_{125}$). The analysis is based on publicly available data collected in 2016 by the CMS experiment at the LHC in proton-proton collisions at a center-of-mass energy of 13 TeV. The amount of data analyzed corresponds to an integrated luminosity of 16.4 $\\text{fb}^{-1}$. The analysis explores for the first time at the LHC the final state exhibiting two muons and two c-quarks, which originate from flavor-asymmetric decays of the pseudoscalar pair. The search probes the pseudoscalar boson mass interval comprised between 4 and 11 GeV, which represents a region where the light bosons exhibit a considerable Lorentz boost, and thus their decay products overlap. No significant deviation from the standard model expectation is observed. Model-independent upper limits at 95% confidence level are set on the product of the cross section and branching fraction for the ${\\text{h}_{125} \\rightarrow \\text{a}\\text{a} \\rightarrow \u03bc^{-}\u03bc^{+} c\\bar{c}}$ process relative to the standard model Higgs boson production cross section, reaching a minimum value close to $3.3 \\times 10^{-4}$. The results are interpreted in the context of two Higgs doublets plus singlet models and compared to existing experimental results covering other decay channels. The exclusion limits obtained by this search improve the current constraints set by various LHC searches in scenarios where the coupling of the light boson to up-type quarks is enhanced.",
