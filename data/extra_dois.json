@@ -1,0 +1,17 @@
+{
+    "10.25592/uhhfdm.16505": {
+        "recids": [
+            "30508",
+            "30541"
+        ],
+        "note": "Aspen Open Jets (arXiv:2412.10504), derived from /JetHT/Run2016G-UL2016_MiniAODv2-v2/MINIAOD and /JetHT/Run2016H-UL2016_MiniAODv2-v2/MINIAOD"
+    },
+    "10.5281/zenodo.21787778": {
+        "recids": [],
+        "note": "Trigger Anomaly Detection for New Physics at the LHC: CMS L1 trigger objects from 2025 zero-bias runs 396102, 398183 and Run 3 Winter25 simulation; not derived from CODP records (concept DOI, all versions)"
+    },
+    "10.5281/zenodo.21787779": {
+        "recids": [],
+        "note": "Trigger Anomaly Detection for New Physics at the LHC: CMS L1 trigger objects from 2025 zero-bias runs 396102, 398183 and Run 3 Winter25 simulation; not derived from CODP records (version 1.0 DOI)"
+    }
+}
