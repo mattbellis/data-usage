@@ -11,12 +11,73 @@ def get_dataset_dois(references):
     dois_referenced = []
     
     for r in references:
-        if 'dois' in r['reference']:
-            if re.search('OPENDATA.CMS', r['reference']['dois'][0], re.IGNORECASE):
-                doi = r['reference']['dois'][0]
+        reference = r.get('reference', {})
+        if 'dois' in reference:
+            if re.search('OPENDATA.CMS', reference['dois'][0], re.IGNORECASE):
+                doi = reference['dois'][0]
                 dois_referenced.append(doi)
 
     return dois_referenced
+
+def get_record_ids(references):
+
+    '''
+    CERN Open Data Portal record ids from opendata.cern.ch/record/<id>
+    URLs in the references
+    '''
+    recids_referenced = []
+
+    for r in references:
+        for u in r.get('reference', {}).get('urls', []):
+            m = re.search(r'opendata\.cern\.ch/record/(\d+)', u['value'], re.IGNORECASE)
+            if m and m.group(1) not in recids_referenced:
+                recids_referenced.append(m.group(1))
+
+    return recids_referenced
+
+codp_url = 'https://opendata.cern.ch/api/records'
+codp_records = {}
+
+def get_codp_record(recid):
+
+    '''
+    Metadata of a CERN Open Data Portal record, cached since
+    many papers cite the same records
+    '''
+    if recid not in codp_records:
+        try:
+            response = requests.get(
+                f'{codp_url}/{recid}',
+                headers={'Accept': 'application/json'},
+                timeout=300
+            )
+            codp_records[recid] = response.json()['metadata']
+        except (requests.RequestException, ValueError, KeyError):
+            print(f'Error looking up record {recid}')
+            codp_records[recid] = {}
+
+    return codp_records[recid]
+
+def get_cms_dataset_records(references):
+
+    '''
+    Record ids and DOIs of the CMS Dataset records cited
+    by CERN Open Data Portal URLs in the references
+    '''
+    recids = []
+    dois = []
+
+    for recid in get_record_ids(references):
+        record = get_codp_record(recid)
+
+        if 'CMS' in record.get('experiment', []) and \
+           record.get('type', {}).get('primary') == 'Dataset':
+            recids.append(recid)
+
+            if record.get('doi'):
+                dois.append(record['doi'])
+
+    return recids, dois
 
 def handle_publication_info(info):
 
@@ -35,12 +96,13 @@ inspire_url = 'https://inspirehep.net/api'
 
 '''
 Get the information on papers that contain 
-CMS open data DOIs in the references
+CMS open data DOIs or CERN Open Data Portal URLs
+in the references
 '''
 
 record_type = 'literature'
 
-search_query = 'q=references.reference.dois:10.7483/OPENDATA.CMS*'
+search_query = 'q=references.reference.dois:10.7483/OPENDATA.CMS* or references.reference.urls.value:*opendata.cern.ch*'
 sort_order = 's=mostrecent'
 n_results = 'size=500'
 
@@ -63,7 +125,11 @@ for hi, hit in enumerate(hits):
     title = metadata['titles'][0]['title']
     date = str(parse(hit['created']).date())
     hid = metadata['control_number']
-    abstract = metadata['abstracts'][0]['value']
+
+    try:
+        abstract = metadata['abstracts'][0]['value']
+    except KeyError:
+        abstract = ''
 
     try:
         authors = [a['full_name'] for a in metadata['authors']]
@@ -72,7 +138,21 @@ for hi, hit in enumerate(hits):
         
     document_type = metadata['document_type'][0]
     publication_info = handle_publication_info(metadata)        
-    dois_referenced = get_dataset_dois(metadata['references'])
+    references = metadata.get('references', [])
+    dois_referenced = get_dataset_dois(references)
+    recids_referenced, record_dois = get_cms_dataset_records(references)
+
+    for d in record_dois:
+        if d.lower() not in [x.lower() for x in dois_referenced]:
+            dois_referenced.append(d)
+
+    '''
+    Skip papers that cite no CMS open data DOI and no CMS Dataset
+    record (e.g. only the portal, docs pages, or other experiments)
+    '''
+    if not dois_referenced and not recids_referenced:
+        continue
+
     citations = metadata['citation_count']
     
     try: 
@@ -100,6 +180,7 @@ for hi, hit in enumerate(hits):
     obj['authors'] = authors
     obj['keywords'] = keywords
     obj['dois_referenced'] = dois_referenced
+    obj['recids_referenced'] = recids_referenced
     obj['document_type'] = document_type
     obj['publication'] = publication_info
     obj['citations'] = citations

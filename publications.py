@@ -121,7 +121,7 @@ def process_dataframe(input_json):
     exclude_names = [
         'McCauley', 'Bellis', 'Lange', 'Tibor', 'Šimko', 'Carrera',
         'Geiser', 'Lassila-Perini', 'Dallmeier-Tiessen', 'Calderon',
-        'Rao', 'Socher', 'Herterich', 'Hogan', 'Saiz',
+        'Rao, A', 'Socher', 'Herterich', 'Hogan', 'Saiz',
     ]
 
     df = pd.read_json(input_json)
@@ -255,7 +255,7 @@ def main():
     ax.set_xlabel('Date published', fontsize=14)
     ax.set_ylabel('Number of papers', fontsize=14)
     ax.set_title(
-        f'Papers citing CMS Open Data DOIs [Inspire]\n'
+        f'Papers citing CMS Open Data DOIs or CODP urls [Inspire]\n'
         f'Excluding CMS/CERN open data teams and CMS Collaboration\n{date_generated}',
         fontsize=10,
     )
@@ -268,7 +268,7 @@ def main():
         idf,
         (np.datetime64('2017').astype(int), np.datetime64('2027').astype(int)),
         10,
-        f'Papers citing CMS Open Data DOIs [Inspire]\n'
+        f'Papers citing CMS Open Data DOIs or CODP urls [Inspire]\n'
         f'Excluding CMS/CERN open data teams and CMS Collaboration\n{date_generated}',
         'inspire-npapers-hist',
     )
@@ -288,7 +288,7 @@ def main():
     plt.yticks(fontsize=12)
     plt.gca().set_yscale('log')
     plt.title(
-        f'Number of citations of papers citing CMS Open Data DOIs [Inspire]\n'
+        f'Number of citations of papers citing CMS Open Data DOIs or CODP urls [Inspire]\n'
         f'{nzero} papers with 0 citations excluded\n{date_generated}'
     )
     plt.tight_layout()
