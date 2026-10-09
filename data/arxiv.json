@@ -111,6 +111,22 @@
         "url": "https://arxiv.org/abs/1902.04222v2"
     },
     {
+        "abstract": "FireworksWeb is a web-based event display utilizing a C++ ROOT-Eve backend with SAPUI5 frontend for interactive 3D visualization of particle physics events directly in the browser. Building upon ROOT-Eve and RenderCore, it eliminates local software installation while maintaining professional-grade event display capabilities. FireworksWeb is currently deployed for live event monitoring in the CMS control room, demonstrating its reliability for real-time data visualization in production environments.\n  The CMS experiment has made a large amount of collision datasets publicly available through the CERN Open Data portal, which are the valuable resources for education, outreach, and research. We have extended FireworksWeb to enable visualization of these open datasets, making particle physics data accessible to diverse audiences without requiring local software installation.\n  Our prototype implementation includes standalone cameras, event filters, configurable collection settings, and projection controls with fish-eye distortion for cylindrical geometries. The web architecture communicating via CGI enables dataset queries and filtered event selection based on physics criteria. We demonstrate the prototype with CMS Open Data events, discuss the technical architecture, and outline applications for education, public outreach, and exploratory physics analysis.",
+        "authors": [
+            "Yuxiao Wang",
+            "Alja Mrak-Tadel",
+            "Matev\u017e Tadel",
+            "Avi Yagil",
+            "Mario Masciovecchio",
+            "Dmytro Kovalskyi",
+            "Sergey Linev"
+        ],
+        "date": "2026-09-24",
+        "doi": "https://arxiv.org/abs/2609.35843v1",
+        "title": "CMS Open Data Visualization with FireworksWeb",
+        "url": "https://arxiv.org/abs/2609.35843v1"
+    },
+    {
         "abstract": "In recent years novel inference techniques have been developed based on the construction of non-linear summary statistics with neural networks by minimising inferencemotivated losses. One such technique is inferno (P. de Castro and T. Dorigo, Comp. Phys. Comm. 244 (2019) 170) which was shown on toy problems to outperform classical summary statistics for the problem of confidence interval estimation in the presence of nuisance parameters. In order to test and benchmark the algorithm in a real world application, a full, systematics-dominated analysis produced by the CMS experiment, \"Measurement of the top-antitop production cross section in the tau+jets channel in pp collisions at sqrt(s) = 7 TeV\" (CMS Collaboration, The European Physical Journal C, 2013) is reproduced with CMS Open Data. The application of the inferno-powered neural network architecture to this analysis demonstrates the potential to reduce the impact of systematic uncertainties in real LHC analyses. This work also exemplifies the extent to which LHC analyses can be reproduced with open data.",
         "authors": [
             "Lukas Layer",
@@ -588,18 +604,6 @@
         "url": "https://arxiv.org/abs/2205.03414v1"
     },
     {
-        "abstract": "We present an unsupervised search for anomalous dijet events in proton--proton collision data using neural spline flow density estimation. A normalizing flow model is trained on a high-dimensional feature space comprising jet, dijet, and event-level observables to learn the dominant Standard Model background directly from data, without assuming a specific signal hypothesis. Events assigned low likelihood under the learned density are identified as potential anomalous events.\n  Using this approach on a CMS Open Data dijet sample, we investigate extreme events in the tail of the anomaly-score distribution and perform an extensive validation and robustness study. This study includes feature-level statistical comparisons, mass decorrelation tests, permutation-based null tests, and evaluations of training stability. The selected anomalous events exhibit notable departures from the background-only expectation, primarily in jet-substructure observables, while remaining stable under several known sources of bias in unsupervised learning.\n  The identified anomalies are distributed across the kinematic phase space and do not exhibit a narrow structure in the dijet invariant-mass spectrum. Instead, they show correlated deviations across multiple observables, consistent with a multivariate difference in jet substructure and event topology rather than a localized resonance. While no claim of new physics is made, this study demonstrates that neural spline flow-based density estimation can be sensitive to rare, structured deviations in collider data and may provide a model-independent exploratory tool for searches for physics beyond the Standard Model at the LHC.",
-        "authors": [
-            "Bhavishya Chebrolu",
-            "Hitesh Rasineni",
-            "Prajwal Aaryan Immadi"
-        ],
-        "date": "2026-09-06",
-        "doi": "https://arxiv.org/abs/2609.06686v1",
-        "title": "Likelihood-Based Unsupervised Anomaly Detection in CMS Dijet Events",
-        "url": "https://arxiv.org/abs/2609.06686v1"
-    },
-    {
         "abstract": "A search is performed for pairs of light pseudoscalar bosons (a) produced from decays of the 125 GeV Higgs boson ($\\text{h}_{125}$). The analysis is based on publicly available data collected in 2016 by the CMS experiment at the LHC in proton-proton collisions at a center-of-mass energy of 13 TeV. The amount of data analyzed corresponds to an integrated luminosity of 16.4 $\\text{fb}^{-1}$. The analysis explores for the first time at the LHC the final state exhibiting two muons and two c-quarks, which originate from flavor-asymmetric decays of the pseudoscalar pair. The search probes the pseudoscalar boson mass interval comprised between 4 and 11 GeV, which represents a region where the light bosons exhibit a considerable Lorentz boost, and thus their decay products overlap. No significant deviation from the standard model expectation is observed. Model-independent upper limits at 95% confidence level are set on the product of the cross section and branching fraction for the ${\\text{h}_{125} \\rightarrow \\text{a}\\text{a} \\rightarrow \u03bc^{-}\u03bc^{+} c\\bar{c}}$ process relative to the standard model Higgs boson production cross section, reaching a minimum value close to $3.3 \\times 10^{-4}$. The results are interpreted in the context of two Higgs doublets plus singlet models and compared to existing experimental results covering other decay channels. The exclusion limits obtained by this search improve the current constraints set by various LHC searches in scenarios where the coupling of the light boson to up-type quarks is enhanced.",
         "authors": [
             "Danyer Perez Adan"
@@ -621,6 +625,18 @@
         "doi": "https://arxiv.org/abs/2205.02857v2",
         "title": "Non-Gaussianities in Collider Energy Flux",
         "url": "https://arxiv.org/abs/2205.02857v2"
+    },
+    {
+        "abstract": "We present an unsupervised search for anomalous dijet events in proton--proton collision data using neural spline flow density estimation. A normalizing flow model is trained on a high-dimensional feature space comprising jet, dijet, and event-level observables to learn the dominant Standard Model background directly from data, without assuming a specific signal hypothesis. Events assigned low likelihood under the learned density are identified as potential anomalous events.\n  Using this approach on a CMS Open Data dijet sample, we investigate extreme events in the tail of the anomaly-score distribution and perform an extensive validation and robustness study. This study includes feature-level statistical comparisons, mass decorrelation tests, permutation-based null tests, and evaluations of training stability. The selected anomalous events exhibit notable departures from the background-only expectation, primarily in jet-substructure observables, while remaining stable under several known sources of bias in unsupervised learning.\n  The identified anomalies are distributed across the kinematic phase space and do not exhibit a narrow structure in the dijet invariant-mass spectrum. Instead, they show correlated deviations across multiple observables, consistent with a multivariate difference in jet substructure and event topology rather than a localized resonance. While no claim of new physics is made, this study demonstrates that neural spline flow-based density estimation can be sensitive to rare, structured deviations in collider data and may provide a model-independent exploratory tool for searches for physics beyond the Standard Model at the LHC.",
+        "authors": [
+            "Bhavishya Chebrolu",
+            "Hitesh Rasineni",
+            "Prajwal Aaryan Immadi"
+        ],
+        "date": "2026-09-06",
+        "doi": "https://arxiv.org/abs/2609.06686v1",
+        "title": "Likelihood-Based Unsupervised Anomaly Detection in CMS Dijet Events",
+        "url": "https://arxiv.org/abs/2609.06686v1"
     },
     {
         "abstract": "In recent years, energy correlators have emerged as a powerful tool for studying jet substructure, with promising applications such as probing the hadronization transition, analyzing the quark-gluon plasma, and improving the precision of top quark mass measurements. The projected $N$-point correlator measures correlations between $N$ final-state particles by tracking the largest separation between them, showing a scaling behavior related to DGLAP splitting functions. These correlators can be analytically continued in $N$, commonly referred to as $\u03bd$-correlators, allowing access to non-integer moments of the splitting functions. Of particular interest is the $\u03bd\\to 0$ limit, where the small momentum fraction behavior of the splitting functions requires resummation. Originally, the computational complexity of evaluating $\u03bd$-correlators for $M$ particles scaled as $2^{2M}$, making it impractical for real-world analyses. However, by using recursion, we reduce this to $M 2^M$, and through the FastEEC method of dynamically resolving subjets, $M$ is replaced by the number of subjets. This breakthrough enables, for the first time, the computation of $\u03bd$-correlators for LHC data. In practice, limiting the number of subjets to 16 is sufficient to achieve percent-level precision, which we validate using known integer-$\u03bd$ results and convergence tests for non-integer $\u03bd$. We have implemented this in an update to FastEEC and conducted an initial study of power-law scaling in the perturbative regime as a function of $\u03bd$, using CMS Open Data on jets. The results agree with DGLAP evolution, except at small $\u03bd$, where the anomalous dimension saturates to a value that matches the BFKL anomalous dimension.",

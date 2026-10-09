@@ -1,6 +1,7 @@
 import json
 import re
 import subprocess
+import sys
 import datetime as dt
 
 import matplotlib
@@ -24,6 +25,41 @@ data_releases = [
     '2023-09-18',
     '2024-04-02',
 ]
+
+
+class Tee:
+    """
+    Write everything printed to both the terminal and a log file
+    """
+    def __init__(self, path):
+        self.terminal = sys.stdout
+        self.log = open(path, 'w')
+
+    def write(self, text):
+        self.terminal.write(text)
+        self.log.write(text)
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+    def close(self):
+        sys.stdout = self.terminal
+        self.log.close()
+
+
+def print_progress(i, n):
+    """
+    Progress counter that updates in place in the terminal;
+    only the final count is written to the log
+    """
+    line = f'  {i}/{n} ({i/n*100:.0f}%)'
+    terminal = getattr(sys.stdout, 'terminal', sys.stdout)
+
+    print(line, end='\r' if i < n else '\n', flush=True, file=terminal)
+
+    if i == n and isinstance(sys.stdout, Tee):
+        sys.stdout.log.write(line + '\n')
 
 
 def make_wordcloud(df, column_name, ftitle):
@@ -83,7 +119,7 @@ def resolve_dois(df):
 
 def process_dataframe(input_json):
     exclude_names = [
-        'McCauley', 'Bellis', 'Lange', 'Tibor', 'Šimko', 'Carerra',
+        'McCauley', 'Bellis', 'Lange', 'Tibor', 'Šimko', 'Carrera',
         'Geiser', 'Lassila-Perini', 'Dallmeier-Tiessen', 'Calderon',
         'Rao', 'Socher', 'Herterich', 'Hogan', 'Saiz',
     ]
@@ -91,7 +127,7 @@ def process_dataframe(input_json):
     df = pd.read_json(input_json)
 
     df['exclude'] = df['authors'].map(
-        lambda x: [e for e in exclude_names if any(e in xn for xn in x)]
+        lambda x: [e for e in exclude_names if any(e.lower() in xn.lower() for xn in x)]
     )
 
     print(f'  {df.shape[0]} papers before author filter')
@@ -105,6 +141,48 @@ def process_dataframe(input_json):
     df.reset_index(inplace=True)
 
     df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
+
+    return df
+
+
+POLICY_DOI = '10.7483/opendata.cms.1bnu.8v1w'
+
+
+def exclude_policy_only(df):
+    """
+    Drop papers whose only CMS open data DOI reference is the
+    data policy document
+    """
+    policy_only = df['dois_referenced'].map(
+        lambda x: {d.lower() for d in x} == {POLICY_DOI}
+    )
+
+    print(f'  {policy_only.sum()} papers citing only the policy DOI excluded')
+
+    df = df[~policy_only].copy()
+    df.reset_index(drop=True, inplace=True)
+    df['index'] = df.index
+
+    return df
+
+
+def exclude_cms_collaboration(df):
+    """
+    Drop papers from the CMS Collaboration
+    """
+    if 'collaborations' not in df.columns:
+        print('  No collaborations field: re-run data/query_inspire.py')
+        return df
+
+    cms = df['collaborations'].map(
+        lambda x: any(c.upper() == 'CMS' for c in x)
+    )
+
+    print(f'  {cms.sum()} CMS Collaboration papers excluded')
+
+    df = df[~cms].copy()
+    df.reset_index(drop=True, inplace=True)
+    df['index'] = df.index
 
     return df
 
@@ -162,6 +240,8 @@ def main():
     # --- Inspire ---
     print('\nProcessing Inspire data...')
     idf = process_dataframe('data/inspire.json')
+    idf = exclude_policy_only(idf)
+    idf = exclude_cms_collaboration(idf)
 
     print('Resolving DOIs (this may take a while)...')
     resolve_dois(idf)
@@ -224,15 +304,13 @@ def main():
     titles = []
     for i, recids in enumerate(idf['codp_recids']):
         titles.append([get_codp_title(str(rid)) for rid in recids])
-        print(f'  {i+1}/{n} ({(i+1)/n*100:.0f}%)', end='\r', flush=True)
-    print()
+        print_progress(i+1, n)
 
     print('Fetching CODP categories (this may take a while)...')
     categories = []
     for i, recids in enumerate(idf['codp_recids']):
         categories.append([get_codp_categories(str(rid)) for rid in recids])
-        print(f'  {i+1}/{n} ({(i+1)/n*100:.0f}%)', end='\r', flush=True)
-    print()
+        print_progress(i+1, n)
 
     primary_categories = []
     secondary_categories = []
@@ -380,4 +458,9 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    log = Tee('publications.log')
+    sys.stdout = log
+    try:
+        main()
+    finally:
+        log.close()

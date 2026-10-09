@@ -84,6 +84,11 @@ for hi, hit in enumerate(hits):
         doi = metadata['dois'][0]['value']
     except KeyError:
         doi = ''
+
+    try:
+        collaborations = [c['value'] for c in metadata['collaborations']]
+    except KeyError:
+        collaborations = []
         
     obj = {}
 
@@ -98,6 +103,7 @@ for hi, hit in enumerate(hits):
     obj['document_type'] = document_type
     obj['publication'] = publication_info
     obj['citations'] = citations
+    obj['collaborations'] = collaborations
     
     papers.append(obj)
 
