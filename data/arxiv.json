@@ -490,6 +490,17 @@
         "url": "https://arxiv.org/abs/2411.13520v1"
     },
     {
+        "abstract": "Precise measurements of single top-quark production in the associated $tW$-channel require efficient discrimination against the dominant $t\\bar{t}$ background. In this work, we investigate the applicability of quantum machine learning to this classification problem using the Variational Quantum Classifier (VQC) algorithm. Simulated proton-proton collision events from CMS Open Data corresponding to Run-2 are employed to train and evaluate the VQC model. Its performance is compared with two established classical approaches, Boosted Decision Trees (BDTs) and Multi-Layer Perceptron (MLP) using both machine learning metrics and physics-motivated metrics that describe the Signal Significance as a function of Signal Efficiency. The comparison is performed separately for the dileptonic $e-\u03bc$ channel and for the resolved and boosted hadronic topologies. In addition, signal-enriched and background-enriched phase-space regions are studied to assess the dependence of classifier performance on event topology. Our results provide a systematic benchmark for the application of VQC for a realistic High Energy Physics classification task and identify the analysis regimes wherein quantum-inspired models offer competitive discrimination with respect to established classical techniques.",
+        "authors": [
+            "Rohan Hindocha",
+            "Priyanka"
+        ],
+        "date": "2026-10-15",
+        "doi": "https://arxiv.org/abs/2610.22504v1",
+        "title": "A comparative study of variational quantum classifiers and classical machine learning for $tW-t\\bar{t}$ discrimination at the LHC",
+        "url": "https://arxiv.org/abs/2610.22504v1"
+    },
+    {
         "abstract": "This analysis shows a search for dark fermion particles produced in association with a heavy neutral gauge boson (Z$^{\\prime}$). The studied events topology are dimuon and a large missing transverse momentum. %We considered the muonic decay of Z$^{\\prime}$. The analyzed data were the Open Data collected by the CMS detector in proton-proton collisions at the LHC in 2012 and correspond to an integrated luminosity of 11.6 fb$^{-1}$ at $\\sqrt{s} = $ 8 TeV. One benchmark scenario the light vector was used for interpreting the data, based on a simplified model so called the mono-Z$^{\\prime}$ model. No evidence of dark fermion candidates was found, 95$\\%$ confidence level limits have been set on both Z$^{\\prime}$ and dark fermion masses.",
         "authors": [
             "Y. Mahmoud",

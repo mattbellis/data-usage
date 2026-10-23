@@ -1,8 +1,9 @@
-Date: 2026-10-09
+Date: 2026-10-23
 
 Processing Inspire data...
-  187 papers before author filter
-  128 papers after author filter
+  200 papers before author filter
+  140 papers after author filter
+  1 papers excluded by hand
   4 papers citing only the policy DOI excluded
   6 CMS Collaboration papers excluded
 Resolving DOIs (this may take a while)...
@@ -10,30 +11,31 @@ Error 10.7483/OPENDATA.CMS.UZD7
 Error 10.7483/OPENDATA.CMS
 Saving figs/inspire-npapers.png
   Generating histogram -> figs/inspire-npapers-hist.png
-  29 papers with 0 citations
-  89 papers with > 0 citations
+  33 papers with 0 citations
+  96 papers with > 0 citations
 Saving figs/inspire-citations.png
   Generating word cloud (title) -> figs/inspire-wc-title.png
   Generating word cloud (abstract) -> figs/inspire-wc-abstract.png
 Fetching CODP titles (this may take a while)...
-  118/118 (100%)
+  129/129 (100%)
 Fetching CODP categories (this may take a while)...
-  118/118 (100%)
-  213 primary categories, 213 secondary categories
+  129/129 (100%)
+  440 primary categories, 319 secondary categories
 Saving figs/inspire-dataset-primary-categories.png
 Saving figs/inspire-dataset-secondary-categories.png
 Parsing dataset names from titles...
-  315 dataset names, 105 eras, 315 tiers
+  554 dataset names, 112 eras, 554 tiers
 Saving figs/inspire-datatiers.png
 Saving figs/inspire-dataset-eras.png
+Saving figs/inspire-dataset-names-once.csv
 Saving figs/inspire-dataset-names.png
 Saving figs/inspire-dataset-names-groups.png
 Saving figs/inspire-publications.png
 Saving figs/inspire-publication-type.png
 
 Processing arXiv data...
-  48 papers before author filter
-  47 papers after author filter
+  49 papers before author filter
+  48 papers after author filter
 Saving figs/arxiv-npapers.png
   Generating histogram -> figs/arxiv-npapers-hist.png
   Generating word cloud (title) -> figs/arxiv-wc-title.png

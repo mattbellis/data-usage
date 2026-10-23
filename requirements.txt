@@ -6,3 +6,4 @@ numpy
 wordcloud
 cernopendata-client
 jupyter
+pypdf

@@ -1,6 +1,5 @@
 import json
 import re
-import subprocess
 import sys
 import datetime as dt
 
@@ -38,6 +37,7 @@ class Tee:
     def write(self, text):
         self.terminal.write(text)
         self.log.write(text)
+        self.log.flush()
 
     def flush(self):
         self.terminal.flush()
@@ -90,7 +90,7 @@ def make_wordcloud(df, column_name, ftitle):
     plt.close()
 
 
-def handle_doi_queries(dois):
+def handle_doi_queries(dois, attempts=2, timeout=60):
     doi_url = 'https://doi.org/api/handles/'
     recids = []
 
@@ -100,13 +100,19 @@ def handle_doi_queries(dois):
         if '(' in doi:
             doi = doi[:-6]
 
-        try:
-            response = requests.get(f'{doi_url}{doi}').json()
-            url = response['values'][1]['data']['value']
-            recid = url.split('/')[-1]
-            recids.append(recid)
-        except KeyError:
-            print('Error ' + doi)
+        for attempt in range(attempts):
+            try:
+                response = requests.get(f'{doi_url}{doi}', timeout=timeout).json()
+                url = response['values'][1]['data']['value']
+                recid = url.split('/')[-1]
+                recids.append(recid)
+                break
+            except (requests.RequestException, ValueError):
+                if attempt == attempts - 1:
+                    print('Error ' + doi)
+            except KeyError:
+                print('Error ' + doi)
+                break
 
     return recids
 
@@ -118,11 +124,8 @@ def resolve_dois(df):
 
 
 def process_dataframe(input_json):
-    exclude_names = [
-        'McCauley', 'Bellis', 'Lange', 'Tibor', 'Šimko', 'Carrera',
-        'Geiser', 'Lassila-Perini', 'Dallmeier-Tiessen', 'Calderon',
-        'Rao, A', 'Socher', 'Herterich', 'Hogan', 'Saiz',
-    ]
+    with open('data/exclude_names.json') as f:
+        exclude_names = json.load(f)
 
     df = pd.read_json(input_json)
 
@@ -166,6 +169,25 @@ def exclude_policy_only(df):
     return df
 
 
+def exclude_papers(df, path='data/exclude_papers.json'):
+    """
+    Drop papers excluded by hand (e.g. ones that cite a dataset but
+    do not use it), listed by INSPIRE record number with the reason
+    """
+    with open(path) as f:
+        excluded = json.load(f)
+
+    hand = df['url'].map(lambda x: x.rsplit('/', 1)[-1] in excluded)
+
+    print(f'  {hand.sum()} papers excluded by hand')
+
+    df = df[~hand].copy()
+    df.reset_index(drop=True, inplace=True)
+    df['index'] = df.index
+
+    return df
+
+
 def exclude_cms_collaboration(df):
     """
     Drop papers from the CMS Collaboration
@@ -185,6 +207,14 @@ def exclude_cms_collaboration(df):
     df['index'] = df.index
 
     return df
+
+
+def bar_figsize(nbars, width=12):
+    """
+    Figure size for a horizontal bar chart, with height growing with
+    the number of bars so that the labels do not overlap
+    """
+    return (width, max(4.8, 0.25 * nbars + 1.5))
 
 
 def make_histogram(df, date_range, nbins, title, ftitle):
@@ -209,28 +239,44 @@ def make_histogram(df, date_range, nbins, title, ftitle):
     plt.close()
 
 
+CODP_URL = 'https://opendata.cern.ch/api/records'
+codp_records = {}
+
+
+def get_codp_record(recid, attempts=2, timeout=60):
+    """
+    Metadata of a CERN Open Data Portal record, fetched once and cached
+    since many papers cite the same records
+    """
+    if recid in codp_records:
+        return codp_records[recid]
+
+    metadata = {}
+
+    for attempt in range(attempts):
+        try:
+            response = requests.get(
+                f'{CODP_URL}/{recid}',
+                headers={'Accept': 'application/json'},
+                timeout=timeout,
+            )
+            metadata = response.json()['metadata']
+            break
+        except (requests.RequestException, ValueError, KeyError):
+            if attempt == attempts - 1:
+                print(f'Error looking up record {recid}')
+
+    codp_records[recid] = metadata
+    return metadata
+
+
 def get_codp_title(recid):
-    results = subprocess.run(
-        ['cernopendata-client', 'get-metadata', '--recid', recid,
-         '--output-value', 'title'],
-        stdout=subprocess.PIPE,
-    )
-    return results.stdout.decode('utf-8')
+    return get_codp_record(recid).get('title', '')
 
 
 def get_codp_categories(recid):
-    results = subprocess.run(
-        ['cernopendata-client', 'get-metadata', '--recid', recid,
-         '--output-value', 'categories'],
-        stdout=subprocess.PIPE,
-    )
-    results = results.stdout.decode('utf-8')
-
-    if 'ERROR' in results:
-        return '', []
-
-    categories = json.loads(results)
-    return categories['primary'], categories['secondary']
+    categories = get_codp_record(recid).get('categories', {})
+    return categories.get('primary', ''), categories.get('secondary', [])
 
 
 def main():
@@ -240,6 +286,7 @@ def main():
     # --- Inspire ---
     print('\nProcessing Inspire data...')
     idf = process_dataframe('data/inspire.json')
+    idf = exclude_papers(idf)
     idf = exclude_policy_only(idf)
     idf = exclude_cms_collaboration(idf)
 
@@ -278,7 +325,9 @@ def main():
     print(f'  {nzero} papers with 0 citations')
     print(f'  {len(nzdf)} papers with > 0 citations')
 
-    h, b = np.histogram(nzdf['citations'], range=(0, 200), bins=20)
+    # Bins of 10 citations, up to the highest count rounded up to the next 50
+    max_citations = int(np.ceil(nzdf['citations'].max() / 50) * 50) if len(nzdf) else 50
+    h, b = np.histogram(nzdf['citations'], range=(0, max_citations), bins=max_citations // 10)
 
     plt.figure()
     plt.bar(b[:-1], h, width=np.diff(b), ec='black', align='edge')
@@ -288,7 +337,8 @@ def main():
     plt.yticks(fontsize=12)
     plt.gca().set_yscale('log')
     plt.title(
-        f'Number of citations of papers citing CMS Open Data DOIs or CODP urls [Inspire]\n'
+        f'Number of citations of papers citing\n'
+        f'CMS Open Data DOIs or CODP urls [Inspire]\n'
         f'{nzero} papers with 0 citations excluded\n{date_generated}'
     )
     plt.tight_layout()
@@ -348,17 +398,19 @@ def main():
     titles = [[t.rstrip() for t in title] for title in titles]
 
     dataset_names = []
+    dataset_papers = []
     dataset_eras = []
     dataset_tiers = []
     others = []
 
-    for title in titles:
+    for title, paper_title, paper_url in zip(titles, idf['title'], idf['url']):
         for t in title:
             if len(re.findall('/', t)) == 3:
                 t = t.split('/')
                 if 'Run201' in t[2]:
                     dataset_eras.append(t[2].split('-')[0])
                 dataset_names.append(t[1])
+                dataset_papers.append((paper_title, paper_url))
                 dataset_tiers.append(t[3])
             else:
                 others.append(t)
@@ -383,11 +435,24 @@ def main():
     plt.savefig('./figs/inspire-dataset-eras.png', dpi=200)
     plt.close()
 
+    # Datasets cited once are listed in a CSV file rather than plotted
+    name_counts = pd.Series(dataset_names).value_counts(sort=True)
+    cited_once = name_counts[name_counts == 1].index
+
+    print('Saving figs/inspire-dataset-names-once.csv')
+    pd.DataFrame(
+        [(n, pt, pu) for n, (pt, pu) in zip(dataset_names, dataset_papers) if n in cited_once],
+        columns=['dataset_name', 'paper_title', 'paper_url'],
+    ).sort_values('dataset_name').to_csv('./figs/inspire-dataset-names-once.csv', index=False)
+
     print('Saving figs/inspire-dataset-names.png')
-    pd.Series(dataset_names).value_counts(sort=True).plot(
+    multiple = name_counts[name_counts > 1]
+    multiple.plot(
         kind='barh',
-        title=f'Dataset names cited [Inspire]\n{date_generated}',
-        figsize=(12, 20),
+        title=f'Dataset names cited more than once [Inspire]\n'
+              f'{len(cited_once)} datasets cited once not shown\n'
+              f'{date_generated}',
+        figsize=bar_figsize(len(multiple)),
     )
     plt.tight_layout()
     plt.savefig('./figs/inspire-dataset-names.png', dpi=200)
@@ -396,10 +461,11 @@ def main():
     print('Saving figs/inspire-dataset-names-groups.png')
     dsn = pd.Series(dataset_names)
     groups = dsn.str.split('_').str[0] + '_*'
-    groups.value_counts(sort=True).plot(
+    group_counts = groups.value_counts(sort=True)
+    group_counts.plot(
         kind='barh',
         title=f'Dataset names cited [Inspire]\n{date_generated}',
-        figsize=(12, 20),
+        figsize=bar_figsize(len(group_counts)),
     )
     plt.tight_layout()
     plt.savefig('./figs/inspire-dataset-names-groups.png', dpi=200)
@@ -445,8 +511,8 @@ def main():
 
     make_histogram(
         adf,
-        (np.datetime64('2017').astype(int), np.datetime64('2026').astype(int)),
-        9,
+        (np.datetime64('2017').astype(int), np.datetime64('2027').astype(int)),
+        10,
         f'Papers containing "CMS Open Data" in the abstract [arXiv]\n{date_generated}',
         'arxiv-npapers-hist',
     )

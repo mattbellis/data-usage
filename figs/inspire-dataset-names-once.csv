@@ -1,0 +1,267 @@
+dataset_name,paper_title,paper_url
+BTag,Jet fragmentation properties with CMS open-data,https://inspirehep.net/literature/2633969
+BulkGravTohhTohbbhbb_narrow_M-600_13TeV-madgraph,A FAIR and AI-ready Higgs boson decay dataset,https://inspirehep.net/literature/1899903
+ChargedHiggs_HplusTB_HplusToHW_M-300_MH2_M-200_TuneCP5_13TeV_amcatnlo_pythia8,A study of foundation models for event classification in collider physics,https://inspirehep.net/literature/3073432
+ChargedHiggs_HplusTB_HplusToTB_M-300_TuneCP5_13TeV_amcatnlo_pythia8,A study of foundation models for event classification in collider physics,https://inspirehep.net/literature/3073432
+Charmonium,BOA constrictor: a Mamba-based lossless compressor for scientific data,https://inspirehep.net/literature/3083484
+DY1jToLL_M-1to10_Pt-0to70_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DY1jToLL_M-1to10_Pt-100to200_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DY1jToLL_M-1to10_Pt-200to400_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DY1jToLL_M-1to10_Pt-400to600_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DY1jToLL_M-1to10_Pt-600toInf_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DY1jToLL_M-1to10_Pt-70to100_TuneCP5_13TeV-madgraph-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DYBJetsToLL_M-50_Zpt-100to200_TuneCP5_13TeV-madgraphMLM-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+DYBJetsToLL_M-50_Zpt-200toInf_TuneCP5_13TeV-madgraphMLM-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+DYJetsToLL_M-10to50_TuneCP5_13TeV-madgraphMLM-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8,Lepton and photon energy scale and resolution corrections based on the minimization of an analytical likelihood: IJazZ2.0,https://inspirehep.net/literature/3121587
+DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+DYToMuMu_M-20_CT10_8TeV-powheg-pythia6,Search for the production of dark matter candidates in association with heavy dimuon resonance using the CMS open data for proton–proton collisions at $\sqrt{s}$ = 8 TeV,https://inspirehep.net/literature/1926375
+DarkMatter_MonoZToLL_A_Mx-10_Mv-20_gDMgQ-1_TuneCUETP8M1_13TeV-madgraph,Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data,https://inspirehep.net/literature/3180713
+DarkMatter_MonoZToLL_A_Mx-50_Mv-200_gDMgQ-1_TuneCUETP8M1_13TeV-madgraph,Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data,https://inspirehep.net/literature/3180713
+DarkMatter_MonoZToLL_EWK_Scalar_Mx-100_Lambda-3000_TuneCUETP8M1_13TeV-madgraph,Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data,https://inspirehep.net/literature/3180713
+DarkMatter_MonoZToLL_V_Mx-1_Mv-500_gDMgQ-1_TuneCUETP8M1_13TeV-madgraph,Mono-Z Dark Matter Search with Neural Spline Flows Using CMS Run 2015D Open Data,https://inspirehep.net/literature/3180713
+DiPhotonBorn_Pt-25To250_8TeV_ext-pythia6,End-to-End Physics Event Classification with CMS Open Data: Applying Image-Based Deep Learning to Detector Data for the Direct Classification of Collision Events at the LHC,https://inspirehep.net/literature/1684494
+DisplacedJet,BOA constrictor: a Mamba-based lossless compressor for scientific data,https://inspirehep.net/literature/3083484
+GluGluHToGG_M-125_8TeV-pythia6,End-to-End Physics Event Classification with CMS Open Data: Applying Image-Based Deep Learning to Detector Data for the Direct Classification of Collision Events at the LHC,https://inspirehep.net/literature/1684494
+GluGluHToGG_M125_TuneCP5_13TeV-amcatnloFXFX-pythia8,Continuous Event Weighting for Resonance Searches,https://inspirehep.net/literature/3209690
+GluGluHToZZTo4L_M125_TuneCP5_13TeV_powheg2_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+GluGluToContinToZZTo4mu_TuneCP5_13TeV-mcfm701-pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+GluGluToHToZZTo4L_M-125_7TeV-minloHJJ-pythia6-tauola,Conditional deep generative models for simultaneous simulation and reconstruction of entire events,https://inspirehep.net/literature/2904417
+HT,Likelihood-Based Unsupervised Anomaly Detection in CMS Dijet Events,https://inspirehep.net/literature/3200701
+HTMHT,Hadronic Mono-Z Dark Matter Sensitivity with Flow Matching on CMS Open Data,https://inspirehep.net/literature/3199414
+LplusNuVBF_Mqq-120_8TeV-madgraph,Enforcing Fundamental Relations via Adversarial Attacks on Input Parameter Correlations,https://inspirehep.net/literature/2867072
+Mu,Towards automation of data quality system for CERN CMS experiment,https://inspirehep.net/literature/1625297
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-190_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-350_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-450_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-500_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-600_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-700_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-800_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-1000_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-240_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-240_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-240_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-240_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-240_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-280_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-300_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-320_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-360_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-360_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-360_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-360_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-400_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-500_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-600_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-190_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-350_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-450_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-500_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-650_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-500_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-700_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-500_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-600_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-800_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-100_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-125_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-150_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-250_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-300_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-400_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-500_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-600_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-60_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-700_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-70_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-80_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+NMSSM_XToYHTo2B2WTo2B2Q1L1Nu_MX-900_MY-90_TuneCP5_13TeV-madgraph-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+Photon,Towards automation of data quality system for CERN CMS experiment,https://inspirehep.net/literature/1625297
+QCD4Jets_Pt-400to5600_TuneZ2Star_8TeV-alpgen,"Testing non-standard sources of parity violation in jets at the LHC, trialled with CMS Open Data",https://inspirehep.net/literature/1731226
+QCD_HT1000to1500_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT100to200_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT1500to2000_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT2000toInf_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT200to300_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT300to500_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT500to700_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_HT700to1000_TuneCP5_PSWeights_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+QCD_Pt-0to5_TuneZ2_7TeV_pythia6,Exploring the Space of Jets with CMS Open Data,https://inspirehep.net/literature/1750786
+QCD_Pt-1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-120To170_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-15To20_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-15to3000_TuneZ2star_Flat_8TeV_pythia6,"Testing non-standard sources of parity violation in jets at the LHC, trialled with CMS Open Data",https://inspirehep.net/literature/1731226
+QCD_Pt-170To300_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-20To30_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-300To470_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-30To50_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-40_doubleEMEnriched_TuneZ2star_8TeV-pythia6,Introduction to the usage of open data from the Large Hadron Collider for computer scientists in the context of machine learning,https://inspirehep.net/literature/2867867
+QCD_Pt-470To600_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-50To80_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-5to15_TuneZ2_7TeV_pythia6,Exploring the Space of Jets with CMS Open Data,https://inspirehep.net/literature/1750786
+QCD_Pt-600To800_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-800To1000_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt-80To120_MuEnrichedPt5_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+QCD_Pt_1000to1400_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_120to170_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_1400to1800_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_15to30_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_170to300_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_1800to2400_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_2400to3200_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_30to50_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_3200toInf_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_50to80_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_600to800_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_800to1000_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+QCD_Pt_80to120_TuneCUETP8M1_13TeV_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+ST_s-channel_4f_InclusiveDecays_13TeV-amcatnlo-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+ST_s-channel_4f_hadronicDecays_TuneCP5_13TeV-amcatnlo-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+ST_t-channel_antitop_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+ST_t-channel_antitop_5f_InclusiveDecays_TuneCP5_13TeV-powheg-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5CR1_13TeV-powheg-madspin-pythia8,EveNet: A Foundation Model for Particle Collision Data Analysis,https://inspirehep.net/literature/3111399
+ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+ST_t-channel_top_4f_inclusiveDecays_13TeV-powhegV2-madspin-pythia8_TuneCUETP8M1,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+ST_t-channel_top_5f_InclusiveDecays_TuneCP5_13TeV-powheg-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+ST_tW_Dilept_5f_DR_TuneCP5_13TeV-amcatnlo-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+ST_tW_antitop_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+ST_tW_top_5f_NoFullyHadronicDecays_TuneCP5_13TeV-powheg-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+TTJets_13TeV-amcatnloFXFX-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+TTJets_FullLeptMGDecays_8TeV-madgraph,Search for the production of dark matter candidates in association with heavy dimuon resonance using the CMS open data for proton–proton collisions at $\sqrt{s}$ = 8 TeV,https://inspirehep.net/literature/1926375
+TTJets_HadronicMGDecays_TuneP11mpiHi_8TeV-madgraph-tauola,"Testing non-standard sources of parity violation in jets at the LHC, trialled with CMS Open Data",https://inspirehep.net/literature/1731226
+TTJets_MSDecays_central_TuneZ2_7TeV-madgraph-tauola,Conditional deep generative models for simultaneous simulation and reconstruction of entire events,https://inspirehep.net/literature/2904417
+TTJets_TuneCP5_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+TTTo2L2Nu_TuneCP5down_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTTo2L2Nu_TuneCP5up_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTTo2L2Nu_hdampDOWN_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTTo2L2Nu_hdampUP_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToHadronic_TuneCP5down_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToHadronic_TuneCP5up_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToHadronic_hdampDOWN_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToHadronic_hdampUP_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToSemiLeptonic_TuneCP5down_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToSemiLeptonic_TuneCP5up_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToSemiLeptonic_hdampDOWN_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTToSemiLeptonic_hdampUP_TuneCP5_13TeV-powheg-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TTWJetsToLNu_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+TTWJetsToQQ_TuneCUETP8M1_13TeV-amcatnloFXFX-madspin-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+TT_TuneCH3_13TeV-powheg-herwig7,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TT_TuneCUETP8M1_13TeV-amcatnlo-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TT_TuneCUETP8M1_13TeV-powheg-scaledown-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TT_TuneCUETP8M1_13TeV-powheg-scaleup-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+TT_TuneEE5C_13TeV-powheg-herwigpp,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+T_TuneZ2_s-channel_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+T_TuneZ2_t-channel_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+T_TuneZ2_tW-channel-DR_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+Tbar_TuneZ2_s-channel_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+Tbar_TuneZ2_t-channel_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+Tbar_TuneZ2_tW-channel-DR_7TeV-powheg-tauola,Inference Aware Neural Optimization for Top Pair Cross-Section Measurements with CMS Open Data,https://inspirehep.net/literature/2683469
+VBF1Parked,A FAIR and AI-ready Higgs boson decay dataset,https://inspirehep.net/literature/1899903
+VBFToHToWWToLAndTauNuQQ_M-125_8TeV-powheg-pythia6,Enforcing Fundamental Relations via Adversarial Attacks on Input Parameter Correlations,https://inspirehep.net/literature/2867072
+VBF_HToZZTo4L_M125_TuneCP5_13TeV_powheg2_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+WJetsToLNu_0J_TuneCP5_13TeV-amcatnloFXFX-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+WJetsToLNu_1J_TuneCP5_13TeV-amcatnloFXFX-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+WJetsToLNu_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8,Client-side transparent caching for remote ROOT data analysis,https://inspirehep.net/literature/3198299
+WJetsToLNu_TuneCP5_13TeV-madgraphMLM-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+WWTo2L2Nu_TuneCP5_13TeV-powheg-pythia8,A comparative study of variational quantum classifiers and classical machine learning for $tW-t\bar{t}$ discrimination at the LHC,https://inspirehep.net/literature/3215951
+WW_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+WZJJ_QCD_13TeV-madgraph-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+WZJetsTo3LNu_8TeV_TuneZ2Star_madgraph_tauola,"Testing non-standard sources of parity violation in jets at the LHC, trialled with CMS Open Data",https://inspirehep.net/literature/1731226
+WZJetsTo3LNu_TuneZ2_7TeV-madgraph-tauola,Expressing Parallelism with ROOT,https://inspirehep.net/literature/1638554
+WZJetsTo3LNu_TuneZ2_8TeV-madgraph-tauola,Search for the production of dark matter candidates in association with heavy dimuon resonance using the CMS open data for proton–proton collisions at $\sqrt{s}$ = 8 TeV,https://inspirehep.net/literature/1926375
+WZTo1L1Nu2Q_13TeV_amcatnloFXFX_madspin_pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+WZZ_TuneCUETP8M1_13TeV-amcatnlo-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+WZ_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+WZ_TuneCUETP8M1_13TeV-pythia8,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
+WminusH_HToZZTo4L_M125_TuneCP5_13TeV_powheg2-minlo-HWJ_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+WminusToMuNu_CT10_8TeV-powheg-pythia6,On the model dependence of fiducial cross-section measurements,https://inspirehep.net/literature/1738304
+WpWmJJToLNuQQ_TuneZ2star_8TeV-vbfnlo-pythia6,Enforcing Fundamental Relations via Adversarial Attacks on Input Parameter Correlations,https://inspirehep.net/literature/2867072
+WpWmJJToQQLNuBar_TuneZ2star_8TeV-vbfnlo-pythia6,Enforcing Fundamental Relations via Adversarial Attacks on Input Parameter Correlations,https://inspirehep.net/literature/2867072
+WplusH_HToZZTo4L_M125_TuneCP5_13TeV_powheg2-minlo-HWJ_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+WplusToMuNu_CT10_8TeV-powheg-pythia6,Introduction to the usage of open data from the Large Hadron Collider for computer scientists in the context of machine learning,https://inspirehep.net/literature/2867867
+ZH_HToZZ_4LFilter_M125_TuneCP5_13TeV_powheg2-minlo-HZJ_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+ZJetToMuMu_Pt-80to120_TuneEE3C_8TeV_herwigpp,Enforcing Fundamental Relations via Adversarial Attacks on Input Parameter Correlations,https://inspirehep.net/literature/2867072
+ZToMuMu_M-50To120_TuneCP5_13TeV-powheg-pythia8,Declarative paradigms for data analysis description and implementation - a demonstrator for High Energy Physics,https://inspirehep.net/literature/3065064
+ZZTo4L_TuneCP5_13TeV_powheg_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+ZZTo4mu_8TeV-powheg-pythia6,Search for the production of dark matter candidates in association with heavy dimuon resonance using the CMS open data for proton–proton collisions at $\sqrt{s}$ = 8 TeV,https://inspirehep.net/literature/1926375
+ZZ_TuneCP5_13TeV-pythia8,Search for an exotic decay of the 125 GeV Higgs boson to a pair of light pseudoscalars in the final state of two muons and two c-quarks in proton-proton collisions at $ \sqrt{s}=13 $ TeV with CMS Open Data,https://inspirehep.net/literature/2912807
+ttHJetTobb_M125_13TeV_amcatnloFXFX_madspin_pythia8,Prospects for Higgs boson and new scalar resonant production searches in ttbb final state at the LHC,https://inspirehep.net/literature/2080560
+ttHTobb_M125_TuneCP5_13TeV-powheg-pythia8,A study of foundation models for event classification in collider physics,https://inspirehep.net/literature/3073432
+ttH_HToZZ_4LFilter_M125_TuneCP5_13TeV_powheg2_JHUGenV7011_pythia8,Constraining new physics in charm quark associated Higgs boson production events using the Standard Model effective field theory approach,https://inspirehep.net/literature/3143510
+ttZJets_13TeV_madgraphMLM,Improving sensitivity of vectorlike top partner searches with jet substructure,https://inspirehep.net/literature/2942757
